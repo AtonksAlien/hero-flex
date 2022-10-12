@@ -7,10 +7,14 @@ menutbtn.addEventListener('click', function() {
 
     if (items.classList.contains('hidden')) {
         items.classList.remove('hidden')
+        cross.classList.remove('hidden')
         items.classList.toggle('slide-in-left')
-        ham.classList.add('flip-vertical-right')
-
+        ham.classList.toggle('fade-out')
+        cross.classList.toggle('fade-in')
     } else {
-        items.classList.toggle('slide-out-right')
+        items.classList.toggle('slide-out-left')
+        ham.classList.toggle('fade-in')
+        cross.classList.toggle('fade-out')
+
     }    
 })

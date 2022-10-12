@@ -27,7 +27,7 @@
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 24px;
 }
 
@@ -101,15 +101,14 @@ a{
   }
 }
 
-.slide-out-right {
-	-webkit-animation: slide-out-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-	        animation: slide-out-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+.slide-out-left {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-out-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
 }
-
-@-webkit-keyframes slide-out-right {
+@-webkit-keyframes slide-out-left {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
@@ -118,10 +117,10 @@ a{
     opacity: 1;
   }
 }
-@keyframes slide-out-right {
+@keyframes slide-out-left {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
     opacity: 0;
   }
   100% {
@@ -132,28 +131,47 @@ a{
 }
 
 
-.flip-vertical-right {
-	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+.fade-out {
+	-webkit-animation: fade-out 1s ease-out both;
+	        animation: fade-out 1s ease-out both;
 }
 
-@-webkit-keyframes flip-vertical-right {
+@-webkit-keyframes fade-out {
   0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    opacity: 0;
   }
 }
-@keyframes flip-vertical-right {
+@keyframes fade-out {
   0% {
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    opacity: 0;
   }
 }
+
+.fade-in {
+	-webkit-animation: fade-out 1s ease-out reverse both;
+	        animation: fade-out 1s ease-out reverse both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
