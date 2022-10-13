@@ -59,7 +59,7 @@ a{
 }
 
 .title{
-  padding-top: 15%;
+  padding-top: 12%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,14 +68,29 @@ a{
 }
 
 h1{
-  border-top: #fff 5px solid;
-  border-bottom: #fff 5px solid;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 74px;
   line-height: 74px;
-  padding: 10px 0;
+}
+
+h1::after{
+  margin: 34px auto 0 auto;
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  background-color: #fff;
+}
+
+h1::before{
+  margin: 0 auto 34px auto;
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  background-color: #fff;
 }
 
 /*Animazioni*/
