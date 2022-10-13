@@ -58,17 +58,21 @@ a{
     color: #fff;
 }
 
-.title{
+.centralComponent{
   padding-top: 12%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.title{
   color: #fff;
 }
 
 h1{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 74px;
@@ -80,7 +84,7 @@ h1::after{
   content: '';
   display: block;
   width: 80%;
-  height: 5px;
+  height: 3px;
   background-color: #fff;
 }
 
@@ -89,8 +93,20 @@ h1::before{
   content: '';
   display: block;
   width: 80%;
-  height: 5px;
+  height: 3px;
   background-color: #fff;
+}
+
+button{
+  color: black;
+  padding: 15px 43px;
+  margin-top: 3%;
+  font-family: 'Roboto Mono', monospace;  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  border: none;
 }
 
 /*Animazioni*/
