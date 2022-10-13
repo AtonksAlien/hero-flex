@@ -32,12 +32,15 @@
 }
 
 .hamburger{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 1;
+  width: 4%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ham{
+  width: 100%;
 }
 
 ul{
@@ -141,8 +144,8 @@ a{
 
 
 .fade-out {
-	-webkit-animation: fade-out 1s ease-out both;
-	        animation: fade-out 1s ease-out both;
+	-webkit-animation: fade-out 0.25s ease-out both;
+	        animation: fade-out 0.25s ease-out both;
 }
 
 @-webkit-keyframes fade-out {
@@ -163,8 +166,8 @@ a{
 }
 
 .fade-in {
-	-webkit-animation: fade-out 1s ease-out reverse both;
-	        animation: fade-out 1s ease-out reverse both;
+	-webkit-animation: fade-out 0.25s ease-out reverse both;
+	        animation: fade-out 0.25s ease-out reverse both;
 }
 
 @-webkit-keyframes fade-in {
