@@ -109,6 +109,18 @@ button{
   border: none;
 }
 
+.socials{
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 15%;
+}
+
+.socials a{
+  cursor: pointer;
+}
+
 /*Animazioni*/
 
 .hidden{
